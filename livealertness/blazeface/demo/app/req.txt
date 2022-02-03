@@ -1,0 +1,17 @@
+click==8.0.1
+Flask==2.0.2
+itsdangerous==2.0.1
+Jinja2==3.0.2
+MarkupSafe==2.0.1
+numpy==1.21.2
+protobuf==3.17.3
+PyQt3D==5.15.4
+PyQt5==5.15.4
+PyQt5-sip==12.9.0
+PyQtChart==5.15.4
+PyQtDataVisualization==5.15.4
+PyQtNetworkAuth==5.15.4
+PyQtPurchasing==5.15.4
+six==1.16.0
+TBB==0.2
+Werkzeug==2.0.2

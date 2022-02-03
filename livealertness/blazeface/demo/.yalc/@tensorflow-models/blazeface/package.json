@@ -1,0 +1,29 @@
+{
+  "name": "@tensorflow-models/blazeface",
+  "version": "0.0.7+c781020e",
+  "description": "Pretrained face detection model in TensorFlow.js",
+  "main": "dist/index.js",
+  "jsnext:main": "dist/blazeface.esm.js",
+  "module": "dist/blazeface.esm.js",
+  "unpkg": "dist/blazeface.min.js",
+  "jsdelivr": "dist/blazeface.min.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tensorflow/tfjs-models.git"
+  },
+  "peerDependencies": {
+    "@tensorflow/tfjs-converter": "^3.1.0",
+    "@tensorflow/tfjs-core": "^3.1.0"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "publish-local": "yarn build && rollup -c && yalc publish",
+    "test": "ts-node --skip-ignore --project tsconfig.test.json run_tests.ts",
+    "build-npm": "yarn build && rollup -c",
+    "lint": "tslint -p . -t verbose",
+    "publish-demo": "./scripts/publish-demo.sh"
+  },
+  "license": "Apache-2.0",
+  "yalcSig": "c781020e17f88556fc74162e80574975"
+}

@@ -1,0 +1,74 @@
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================================================================-->
+<html>
+  <head>
+<style>
+  body {
+    margin: 25px;
+  }
+
+  #main {
+    position: relative;
+    margin: 50px 0;
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #description {
+    margin-top: 20px;
+    width: 600px;
+  }
+
+  #description-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+</style>
+<script src="face-api.min.js"></script>
+
+</head>
+<body>
+  <div id="main">
+    <video id="video" playsinline style="
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      width: auto;
+      height: auto;
+      ">
+    </video>
+    <canvas id="output"></canvas>
+      <div><h1>Face position:<h1 id="status"></h1></div>
+    </div><h1>Number of Faces:</h1><h1 id='num_faces'></h1></div>
+  </div><h1>Expression:</h1><h1 id='exp'></h1></div>
+  <!--</div><h1>Extreme:</h1><h1 id='Extreme'></h1></div>-->
+    <video id="video" playsinline style="
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      visibility: hidden;
+      width: auto;
+      height: auto;
+      ">
+    </video>
+    
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+<script src="index.js"></script>
+</html>

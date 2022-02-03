@@ -1,0 +1,8 @@
+{
+  "version": "v1",
+  "packages": {
+    "@tensorflow-models/blazeface": {
+      "signature": "c781020e17f88556fc74162e80574975"
+    }
+  }
+}
