@@ -1,2 +1,1 @@
 # livealertnesssystem
-leacture notes backup
